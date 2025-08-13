@@ -5,12 +5,19 @@ int soma(int *x, int *y, int *result){
 }
 
 int main( void ){
-	int x = 10;
-	int y = 20;
+	
+	int x = 0;
+	int y = 0;
+	
+	fflush( stdin );
+	scanf("%d", &x);
+	fflush( stdin );
+	scanf("%d", &y);
+	
 	int result = 0;
 	
 	soma(&x, &y, &result);
 	
-	printf("SOMA = %d", result);
+	printf("SOMA = %d\n", result);
 }
 
